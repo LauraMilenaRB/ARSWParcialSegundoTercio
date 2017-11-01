@@ -23,8 +23,8 @@ var app = (function () {
                 });
                 stompClient.subscribe('/topic/winner.'+gameid, function (data) {
                     var nombre=JSON.stringify(data.body);
-                    $("#ganador").text("<h1>Ganador" + nombre + "</h1>");
-                    $("#estatusact").text("<h1> Terminado.</h1>");
+                    $("#ganador").text("Ganador" + nombre);
+                    $("#estatusact").text("Terminado.");
                 
                 });
             
